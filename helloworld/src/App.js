@@ -5,12 +5,27 @@ import './App.css';
 // or
 import Greet from './components/Greet';
 import Welcome from './components/Welcome';
+import Zaga from './components/myown';
 
 function App() {
   return (
     <div className="App">
-      <Greet></Greet>
-      <Welcome></Welcome>
+      <Zaga>
+        <header>Talk to me children</header>
+      </Zaga>
+      <Greet name="Jordan" heroname="Superman">
+        <p>This is Children props</p>
+      </Greet>
+      <Greet name="Kent" heroname="Batman">
+        <button>Click Me!</button>
+      </Greet>
+      <Greet name="Jabari" heroname="Spiderman"></Greet>
+
+      <Welcome name="Jordan" heroname="Superman">
+        <p>For instance I am a child of Jordan</p>
+      </Welcome>
+      <Welcome name="Khloe" heroname="Antman"></Welcome>
+      <Welcome name="Bobby" heroname="Waspman"></Welcome>
     </div>
   );
 }

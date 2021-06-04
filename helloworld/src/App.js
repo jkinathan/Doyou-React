@@ -6,11 +6,17 @@ import './App.css';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome';
 import Zaga from './components/myown';
+import Message from './components/Message';
+
 
 function App() {
   return (
     <div className="App">
-      <Zaga>
+      {
+      <Message>
+        
+      </Message>
+      /* <Zaga>
         <header>Talk to me children</header>
       </Zaga>
       <Greet name="Jordan" heroname="Superman">
@@ -25,7 +31,7 @@ function App() {
         <p>For instance I am a child of Jordan</p>
       </Welcome>
       <Welcome name="Khloe" heroname="Antman"></Welcome>
-      <Welcome name="Bobby" heroname="Waspman"></Welcome>
+      <Welcome name="Bobby" heroname="Waspman"></Welcome> */}
     </div>
   );
 }

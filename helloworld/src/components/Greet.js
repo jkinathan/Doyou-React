@@ -3,14 +3,16 @@ import React from 'react';
 // function Greet(){
 //     return <h1> Hello Jordan</h1>
 // }
-
+// const Greet = ({name,heroname}) => {
+    // or 
 const Greet = (props) => {
-    console.log(props)
-
+    const {name, heroname} = props
+    // extracting only name and heroname from the props
+    // restructuring in the parameter
     return (
         <div>
-            <h1>Hello {props.name} a.k.a {props.heroname} !</h1>
-            {props.children}
+            <h1>Hello {name} a.k.a {heroname} !</h1>
+            {/* {props.children} */}
         </div>
         
     );

@@ -23,6 +23,7 @@ function NameList() {
         <div>
             {
                 persons.map(person => <Person key={person.name} person={person}></Person>)
+                // Look at also keys using indexes, though not a good soln always stick to ids
             }
         </div>
     )

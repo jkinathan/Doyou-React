@@ -2,7 +2,7 @@ import React from 'react'
 
 
 const heading = {
-    fontSize: '72px',
+    fontSize: '72px', // must be camelCased
     color: 'blue'
 }
 function Inline() {

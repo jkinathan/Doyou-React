@@ -8,6 +8,8 @@ import Parent from './components/Parent';
 import Usergreeting from './components/Usergreeting';
 import NameList from './components/NameList';
 import Inline from './components/Inline';
+import './appStyle.css';
+import styles from './appStyle.module.css'; //for the module.css
 
 function App() {
   return (
@@ -23,6 +25,10 @@ function App() {
              {/* <Usergreeting></Usergreeting> */}
              {/* <NameList></NameList> */}
              <Inline></Inline>
+             <h1 className="error">Error</h1>
+             {/* Regular css file error above */}
+             <h2 className={styles.success}>Success</h2>
+             {/* Modules method above */}
         </div>
         
       }

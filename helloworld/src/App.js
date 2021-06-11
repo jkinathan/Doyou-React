@@ -7,7 +7,7 @@ import EventBind from './components/EventBind';
 import Parent from './components/Parent';
 import Usergreeting from './components/Usergreeting';
 import NameList from './components/NameList';
-
+import Inline from './components/Inline';
 
 function App() {
   return (
@@ -21,7 +21,8 @@ function App() {
             {/* <Parent></Parent>
              */}
              {/* <Usergreeting></Usergreeting> */}
-             <NameList></NameList>
+             {/* <NameList></NameList> */}
+             <Inline></Inline>
         </div>
         
       }

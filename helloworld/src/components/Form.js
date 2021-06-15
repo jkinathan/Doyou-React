@@ -27,4 +27,5 @@ class Form extends Component {
     }
 }
 
+// Exporting our file accessible inside App.js
 export default Form

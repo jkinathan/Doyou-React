@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class Form extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             username: ''
+             username: '',
+             description: ''
         }
     }
 
@@ -14,15 +15,25 @@ class Form extends Component {
             username: event.target.value
         })
     }
+
+    descriptionChange = (event) =>{
+        this.setState({
+            description: event.target.value
+        })
+    }
     
     render() {
         return (
-            <Form>
+            <form>
                 <div>
                     <label>Username</label>
                     <input type="text" value={this.state.username} onChange={this.usernameChange}></input>
+                    <label>Description</label>
+                    <textarea type="text" value={this.state.description} onChange={this.descriptionChange}>
+
+                    </textarea>
                 </div>
-            </Form>
+            </form>
         )
     }
 }

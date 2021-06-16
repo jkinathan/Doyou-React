@@ -48,6 +48,9 @@ class Form extends Component {
                         <option value="django">Django</option>
                         <option value="laravel">Laravel</option>
                     </select>
+                    <div>
+                        <button>Submit</button>
+                    </div>
                 </div>
             </form>
         )

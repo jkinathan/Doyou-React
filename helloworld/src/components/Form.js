@@ -28,10 +28,15 @@ class Form extends Component {
             topic: event.target.value
         })
     }
+
+    handleSubmit = (event) =>{
+        alert(`${this.state.username} ${this.state.description} ${this.state.topic}`)
+        event.preventDefault()
+    }
     
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <div>
                     <label>Username</label>
                     <input type="text" value={this.state.username} onChange={this.usernameChange}></input>
@@ -49,7 +54,7 @@ class Form extends Component {
                         <option value="laravel">Laravel</option>
                     </select>
                     <div>
-                        <button>Submit</button>
+                        <button type="submit">Submit</button>
                     </div>
                 </div>
             </form>

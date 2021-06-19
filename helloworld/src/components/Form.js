@@ -32,6 +32,7 @@ class Form extends Component {
     handleSubmit = (event) =>{
         alert(`${this.state.username} ${this.state.description} ${this.state.topic}`)
         event.preventDefault()
+        // to prevent default behaviout of the forms from removing data after submission
     }
     
     render() {

@@ -1,13 +1,13 @@
 
-import Fragment from './components/Fragment';
-
+import Form from './components/Form';
+ 
 function App() {
   return (
     <div className="App">
       {
         
         <div>
-             <Fragment></Fragment>
+             <Form></Form>
         </div>
         
       }

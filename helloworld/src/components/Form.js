@@ -35,8 +35,12 @@ class Form extends Component {
         // to prevent default behaviout of the forms from removing data after submission
     }
     
+    gotcha(event){
+        alert("Halla")
+    }
     render() {
         return (
+            <div>
             <form onSubmit={this.handleSubmit}>
                 <div>
                     <label>Username</label>
@@ -56,9 +60,16 @@ class Form extends Component {
                     </select>
                     <div>
                         <button type="submit">Submit</button>
-                    </div>
+                        </div>
+                    
                 </div>
             </form>
+            <div>
+            <button type="submit" onClick={()=>this.gotcha()}>Gotcha</button>
+
+            </div>
+            </div>
+                    
         )
     }
 }

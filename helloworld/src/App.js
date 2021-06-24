@@ -16,7 +16,7 @@ function App() {
             <ErrorBoundary>
                 <Hero heroName="Superman"></Hero>
             </ErrorBoundary> */}
-            <ClickCounter/>
+            <ClickCounter name="Kinobe"/>
             <HoverCounter></HoverCounter>
         </div>
         

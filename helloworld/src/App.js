@@ -4,6 +4,7 @@
 // import Hero from './components/Hero';
 // import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
                 <Hero heroName="Superman"></Hero>
             </ErrorBoundary> */}
             <ClickCounter></ClickCounter>
+            <HoverCounter></HoverCounter>
         </div>
         
       }

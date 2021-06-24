@@ -1,6 +1,8 @@
 
 import Fragment from './components/Fragment';
 import RefsDemo from './components/RefsDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   
@@ -10,7 +12,13 @@ function App() {
         
         <div>
              {/* <Fragment></Fragment> */}
-             <RefsDemo></RefsDemo>
+             {/* <RefsDemo></RefsDemo> */}
+            <ErrorBoundary>
+                <Hero heroName="Joker"></Hero>
+            </ErrorBoundary>
+            <ErrorBoundary>
+                <Hero heroName="Superman"></Hero>
+            </ErrorBoundary>
         </div>
         
       }

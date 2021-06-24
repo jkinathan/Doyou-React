@@ -1,8 +1,9 @@
 
-import Fragment from './components/Fragment';
-import RefsDemo from './components/RefsDemo';
-import Hero from './components/Hero';
-import ErrorBoundary from './components/ErrorBoundary';
+// import Fragment from './components/Fragment';
+// import RefsDemo from './components/RefsDemo';
+// import Hero from './components/Hero';
+// import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
 
 function App() {
   
@@ -13,12 +14,13 @@ function App() {
         <div>
              {/* <Fragment></Fragment> */}
              {/* <RefsDemo></RefsDemo> */}
-            <ErrorBoundary>
+            {/* <ErrorBoundary>
                 <Hero heroName="Joker"></Hero>
             </ErrorBoundary>
             <ErrorBoundary>
                 <Hero heroName="Superman"></Hero>
-            </ErrorBoundary>
+            </ErrorBoundary> */}
+            <ClickCounter></ClickCounter>
         </div>
         
       }

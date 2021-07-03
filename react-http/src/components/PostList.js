@@ -28,7 +28,7 @@ class PostList extends Component {
             <div>
                 List of Posts
                 {
-                    
+                    // My interesting map function
                     this.state.posts.map((item,id)=>{
                         return(
 

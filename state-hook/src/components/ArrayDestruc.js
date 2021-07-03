@@ -5,10 +5,14 @@ class ArrayDestruc extends Component {
         super(props)
     
         const alphabet = ['A','B','C','D','E','F']
+        const numbers = ['1','2','3','4','5','6']
+
+        const newArray = [...alphabet, ...numbers] //combining two arrays
 
 
-        const [a,b,c, ...rest] = alphabet
+        const [a,,c, ...rest] = alphabet //getting first, skip second, get third and the rest of array
         console.log(a,b,c, rest)
+        console.log(newArray)
     }
     
     

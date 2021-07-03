@@ -11,7 +11,7 @@ class ArrayDestruc extends Component {
 
 
         const [a,,c, ...rest] = alphabet //getting first, skip second, get third and the rest of array
-        console.log(a,b,c, rest)
+        console.log(a,c, rest)
         console.log(newArray)
     }
     

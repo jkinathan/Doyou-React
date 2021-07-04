@@ -12,6 +12,8 @@ function CounterOne() {
         console.log('Updating....')
     },[count])
 
+    //if you leave the [] empty, the useEffect is run only once on initial render
+
     //what is included in the second argument is prop or state which if it changes
     //is when the useEffect will be run
 

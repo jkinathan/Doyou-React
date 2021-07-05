@@ -4,9 +4,14 @@ import axios from 'axios'
 function DataFetch() {
     const [post,setPost] = useState({})
     const [id,setId] = useState(1)
+    const [buttonid,setButtonId] = useState(1)
+
+    const sender = () =>{
+        setButtonId(id)
+    }
 
     useEffect(()=>{
-        axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+        axios.get(`https://jsonplaceholder.typicode.com/posts/${buttonid}`)
         .then(response=>{
             setPost(response.data) //setting the setPosts to get the response data and fill it into the array
             console.log(response)
@@ -14,15 +19,14 @@ function DataFetch() {
         .catch(error=>{
             console.log(error)
         })
-    },[id]) //running the setEffect to run only once only on initial render leave array [] empty
+    },[buttonid]) //running the setEffect to run only once only on initial render leave array [] empty
 
+    
     return (
         <div>
-            <form onSubmit={(event)=>setId(event.target.value)}>
-                <input type="text" value={id}/>
-                
-                <button type="submit">Send</button>
-            </form>
+            
+                <input type="text" value={id} onChange={(event)=>setId(event.target.value)}/>
+                <button type="submit" onClick={sender}> Send </button>
             
             {/* <ul>
                 {

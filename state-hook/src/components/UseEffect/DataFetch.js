@@ -2,22 +2,29 @@ import React, {useState,useEffect} from 'react'
 import axios from 'axios'
 
 function DataFetch() {
-    const [posts,setPosts] = useState([])
+    const [post,setPost] = useState({})
+    const [id,setId] = useState(1)
 
     useEffect(()=>{
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
         .then(response=>{
-            setPosts(response.data) //setting the setPosts to get the response data and fill it into the array
+            setPost(response.data) //setting the setPosts to get the response data and fill it into the array
             console.log(response)
         })
         .catch(error=>{
             console.log(error)
         })
-    },[]) //running the setEffect to run only once only on initial render leave array [] empty
+    },[id]) //running the setEffect to run only once only on initial render leave array [] empty
 
     return (
         <div>
-            <ul>
+            <form onSubmit={(event)=>setId(event.target.value)}>
+                <input type="text" value={id}/>
+                
+                <button type="submit">Send</button>
+            </form>
+            
+            {/* <ul>
                 {
                     posts.map((post,id)=>{
                         return(
@@ -27,7 +34,9 @@ function DataFetch() {
                         )
                     })
                 }
-            </ul>
+            </ul> */}
+
+            <p>{post.title}</p>
         </div>
     )
 }

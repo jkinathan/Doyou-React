@@ -7,6 +7,8 @@ import ComponentC from './components/UseContext/ComponentC';
 import CounterOne from './components/UseEffect/CounterOne';
 import DataFetch from './components/UseEffect/DataFetch';
 import React from 'react'
+import MyRenderProp from './components/UseContext/MyRenderProp';
+import RenderSon from './components/UseContext/RenderSon';
 
 export const UserContext = React.createContext()
 
@@ -25,6 +27,8 @@ function App() {
       <UserContext.Provider value={'Jordan'}>
         <ComponentC/>
       </UserContext.Provider>
+
+      <MyRenderProp name={(count,myFunction) => <RenderSon count={count} myFunc={myFunction}/>}/>
       
     </div>
   );

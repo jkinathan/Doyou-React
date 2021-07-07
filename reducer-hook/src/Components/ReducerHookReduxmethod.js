@@ -7,15 +7,20 @@ const initialState = {
 const reducer = (currentState, action)=>{ //reducer function accepts also two parameters currentState
     // and second the action to be done on the current state hehehe
     //it will return a single value the new state
-    switch(action){
+    switch(action.type){
         case 'increment':
-            return currentState + 1
+            return {
+                firststate: currentState.firststate + 1
+            }
         case 'decrement':
-            return currentState -1
+            return {
+                firststate: currentState.firststate -1 }
         case 'reset':
-            return initialState
+            return {    
+                initialState
+                }
         default:
-            return currentState
+            return {currentState}
     }
 
 }
@@ -32,9 +37,9 @@ function ReducerHookReduxmethod() {
 
             Count: {newCount.firststate}
             
-            <button onClick={()=>dispatch('increment')}>Increment</button>
-            <button onClick={()=>dispatch('decrement')}>Decrement</button>
-            <button onClick={()=>dispatch('reset')}>Reset</button>
+            <button onClick={()=>dispatch({ type: 'increment' })}>Increment</button>
+            <button onClick={()=>dispatch({ type: 'decrement' })}>Decrement</button>
+            <button onClick={()=>dispatch({ type: 'reset' })}>Reset</button>
 
 
         </div>

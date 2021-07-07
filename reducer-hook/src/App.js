@@ -1,6 +1,6 @@
 
 import './App.css';
-import ReducerHook from './Components/ReducerHook';
+// import ReducerHook from './Components/ReducerHook';
 import ReducerHookReduxmethod from './Components/ReducerHookReduxmethod';
 
 function App() {

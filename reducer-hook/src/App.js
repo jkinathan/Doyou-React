@@ -1,11 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
 import ReducerHook from './Components/ReducerHook';
+import ReducerHookReduxmethod from './Components/ReducerHookReduxmethod';
 
 function App() {
   return (
     <div className="App">
-      <ReducerHook/>
+      {/* <ReducerHook/> */}
+      <ReducerHookReduxmethod/>
       
     </div>
   );

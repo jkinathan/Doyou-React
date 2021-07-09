@@ -4,6 +4,7 @@ import DataFetch1 from './Components/DataFetch1';
 import DataFetch2 from './Components/DataFetch2';
 // import ReducerHook from './Components/ReducerHook';
 import ReducerHookReduxmethod from './Components/ReducerHookReduxmethod';
+import Ref from './Components/Ref';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <ReducerHook/> */}
       {/* <ReducerHookReduxmethod/> */}
       {/* <DataFetch1/> */}
-      <DataFetch2/>
+      {/* <DataFetch2/> */}
+      <Ref/>
     </div>
   );
 }

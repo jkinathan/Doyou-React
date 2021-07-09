@@ -13,7 +13,7 @@ function Ref() {
     return (
         <div>
             <input ref={inputRef} type="text"/>
-            //use ref keyword for attaching the created ref to the input field
+            {/* //use ref keyword for attaching the created ref to the input field */}
         </div>
     )
 }
